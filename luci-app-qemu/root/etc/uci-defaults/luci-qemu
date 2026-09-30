@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Create necessary directories
+mkdir -p /storage/qemu
+
+# Make init script executable
+chmod +x /etc/init.d/qemu
+
+# Make tap interface up scripts executable
+chmod +x /etc/qemu-ifup
+
+# Make tap interface down scripts executable
+chmod +x /etc/qemu-ifdown
+
+exit 0
